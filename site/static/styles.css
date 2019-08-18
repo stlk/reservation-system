@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+a {
+    transition: color 0.3s;
+}
+
+.opacity-0 {
+    transition: opacity 0.3s;
+}
+
+.calendar-item {
+    @apply relative border border-t-0 p-10 pl-12 items-center;
+}
+@screen md {
+    .calendar-item {
+        @apply flex;
+    }
+}
+.calendar-item--gold::before {
+    @apply bg-yellow-600;
+}
+.calendar-item::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+}
