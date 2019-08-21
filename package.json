@@ -1,0 +1,25 @@
+{
+  "name": "reservation-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\"\"",
+  "dependencies": {
+    "tailwindcss": "^1.1.2",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tailwind build site/static/styles.css -o site/static/output.css && python build.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stlk/reservation-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stlk/reservation-system/issues"
+  },
+  "homepage": "https://github.com/stlk/reservation-system#readme"
+}

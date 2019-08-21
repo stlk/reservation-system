@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <title>Kalendář - Yoga studio</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/static/output.css" rel="stylesheet">
-  </head>
-  <body class="font-serif">
-    <header class="container mx-auto my-8">
-      <h1 class="text-2xl font-semibold font-sans uppercase italic tracking-2x-widest ml-4 sm:ml-0">Yoga studio</h1>
-    </header>
-    <div class="container mx-auto flex">
-      <div class="w-full">
-        <div class="border p-12">
-          <h2 class="uppercase tracking-2x-widest text-xl italic font-semibold">Kalendář akcí</h2>
-        </div>
-        {% for event in events %}
-          {% include 'calendar-item.html' %}
-        {% endfor %}
-      </div>
+{% extends "base.html" %} {% block title %}Kalendář{% endblock %}
+{% block content %}
+<header class="container mx-auto my-8">
+  <h1
+    class="text-2xl font-semibold font-sans uppercase italic tracking-2x-widest py-8 ml-4 sm:ml-0"
+  >
+    Yoga studio
+  </h1>
+</header>
+<div class="container mx-auto flex">
+  <div class="w-full">
+    <div class="border p-12">
+      <h2 class="uppercase tracking-2x-widest text-xl italic font-semibold">
+        Kalendář akcí
+      </h2>
     </div>
-    <footer class="border-t py-10 mt-12">
-      <div class="container mx-auto italic text-sm">
-        Your favorite Yoga Studio — <a href="mailto:josef@rousek.name" class="underline text-blue-700 hover:no-underline">josef@rousek.name</a>
-      </div>
-    </footer>
-  </body>
-</html>
+    {% for event in events %} {% include 'calendar-item.html' %} {% endfor %}
+  </div>
+</div>
+<footer class="border-t py-10 mt-12">
+  <div class="container mx-auto italic text-sm">
+    Your favorite Yoga Studio —
+    <a
+      href="mailto:josef@rousek.name"
+      class="underline text-blue-700 hover:no-underline"
+      >josef@rousek.name</a
+    >
+  </div>
+</footer>
+{% endblock %}

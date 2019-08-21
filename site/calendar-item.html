@@ -1,20 +1,28 @@
 <div class="calendar-item calendar-item--gold">
   <div class="hidden md:block mr-10">
-    <a href="#" class="group relative block w-24 h-24 rounded-full overflow-hidden">
-      <img class="" src="{{event.instructor.photo}}" alt="">
-      <span class="flex absolute inset-0 items-center justify-center text-white bg-backdrop opacity-0 group-hover:opacity-100">{{event.instructor.name}}</span>
+    <a
+      href="event.html"
+      class="group relative block w-24 h-24 rounded-full overflow-hidden"
+    >
+      <img class="" src="{{event.instructor.photo}}" alt="" />
+      <span
+        class="flex absolute inset-0 items-center justify-center text-white bg-backdrop opacity-0 group-hover:opacity-100"
+        >{{event.instructor.name}}</span
+      >
     </a>
   </div>
   <div class="flex-grow">
-    <h4 class="font-sans uppercase tracking-2x-widest text-xs leading-loose">{{event.time}}</h4>
+    <h4 class="font-sans uppercase tracking-2x-widest text-xs leading-loose">
+      {{event.time}}
+    </h4>
     <h3 class="font-bold italic leading-loose">
-      <a href="#" class="hover:text-yellow-600">
+      <a href="event.html" class="hover:text-yellow-600">
         {{event.title}}
       </a>
     </h3>
     <p class="text-sm italic">{{event.place}}</p>
   </div>
-  <a href="#" class="inline-block border-2 border-yellow-600 py-2 px-6 whitespace-no-wrap text-xs font-semibold font-sans uppercase text-yellow-600 italic tracking-2x-widest leading-loose hover:text-white hover:bg-yellow-600 mt-6 md:mt-0">
+  <a href="#" class="button mt-6 md:mt-0">
     Rezervovat místo
   </a>
 </div>

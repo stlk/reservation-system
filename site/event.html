@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% block title %}Hatha jóga a relaxace{% endblock %}
+{% block content %}
+<aside
+  class="fixed h-screen bg-cover w-3/7"
+  style="background-image: url('/static/images/annie-spratt-PXURzW9Vcks-unsplash.jpg')"
+>
+  <h1
+    class="text-3xl font-semibold font-sans uppercase italic tracking-2x-widest p-8 text-white"
+  >
+    <a href="/">
+      Yoga studio
+    </a>
+  </h1>
+</aside>
+<article class="ml-3/7 pt-20 pr-16">
+  <header class="text-center">
+    <a
+      href="#"
+      class="group relative inline-block w-24 h-24 rounded-full overflow-hidden"
+    >
+      <img class="" src="/static/images/avatar.jpg" alt="" />
+      <span
+        class="flex absolute inset-0 items-center justify-center text-white bg-backdrop opacity-0 group-hover:opacity-100"
+      >
+        Katka
+      </span>
+    </a>
+    <h1 class="text-5xl italic font-black mb-2">Ranní jóga - open class</h1>
+    <h3 class="font-sans uppercase tracking-2x-widest text-xs leading-loose">
+      otevřená lekce pro všechny úrovně
+    </h3>
+    <a href="#" class="button mt-8">
+      Rezervovat místo
+    </a>
+    <p class="mt-8 font-sans font-black italic text-xl">160 Kč</p>
+  </header>
+  <div class="border-t border-b py-10 px-16 mt-12">
+    <p class="font-sans uppercase tracking-2x-widest text-xs leading-loose">
+      pátek 7:15—8:30 h
+    </p>
+    <p class="italic tracking-wide">Pure Yoga studio, Pekařská 26, Brno</p>
+  </div>
+  <div class="p-16 sm:flex">
+    <h2 class="flex-shrink-0 mr-12">
+      <span
+        class="border-b-2 border-black pb-3 font-black font-sans uppercase italic tracking-2x-widest text-xs"
+      >
+        O akci
+      </span>
+    </h2>
+    <div
+      class="mt-4 sm:mt-0 font-sans text-lg tracking-wide font-light leading-relaxed"
+    >
+      <p>
+        What exactly Hatha yoga actually is hasn’t changed for thousands of
+        years, however our thinking and perception of it certainly has. Language
+        is a powerful thing, and in different cultures the same word can have a
+        variety of definitions, throughout the evolution of yoga practice, the
+        same word – Hatha – has come to mean different things too.
+      </p>
+      <p>
+        Popular thinking ‘in the West’ (an all-too-common expression now), is
+        that Hatha yoga is about balancing the body and mind. With ‘ha’
+        representing the esoteric sun, and ‘tha’ the moon, and the practice of
+        Hatha yoga aiming to join, yoke, or balance these two energies.
+      </p>
+      <p>
+        A yoga class described as ‘Hatha' will typically involve a set of
+        physical postures and breathing techniques, practised more slowly and
+        with more static posture holds than perhaps a Vinyasa flow or Ashtanga
+        class.
+      </p>
+    </div>
+  </div>
+  <footer class="border-t mt-12 px-16 py-12 italic flex justify-between">
+    <span class="text-xl tracking-tight">Kontakt</span>
+    <span class="text-lg font-sans font-black tracking-tight"
+      >+420 608 123 456</span
+    >
+    <a
+      href="mailto:josef@rousek.name"
+      class="underline text-blue-700 hover:no-underline text-lg font-sans font-black tracking-wider"
+      >josef@rousek.name</a
+    >
+  </footer>
+</article>
+{% endblock %}

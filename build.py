@@ -16,8 +16,9 @@ def generate_output(data):
     data.update(os.environ) # Expose env variables to template
     log.debug('Generating output ...')
     env = Environment(loader = FileSystemLoader(['./site/', '.']))
-    template = env.get_template('site/index.html')
-    template.stream(data).dump('public/index.html')
+    for name in ['index', 'event']:
+        template = env.get_template(f'site/{name}.html')
+        template.stream(data).dump(f'public/{name}.html')
 
 
 cleanup()
