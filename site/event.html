@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block title %}Hatha jóga a relaxace{% endblock %}
 {% block content %}
 <aside
-  class="fixed h-screen bg-cover w-3/7"
+  class="hidden lg:block fixed h-screen bg-cover w-3/7"
   style="background-image: url('/static/images/annie-spratt-PXURzW9Vcks-unsplash.jpg')"
 >
   <h1
@@ -12,7 +12,14 @@
     </a>
   </h1>
 </aside>
-<article class="ml-3/7 pt-20 pr-16">
+<header class="lg:hidden">
+    <h1 class="text-xl font-semibold font-sans uppercase italic tracking-2x-widest p-4 border-b">
+      <a href="/">
+        Yoga studio
+      </a>
+    </h1>
+</header>
+<article class="lg:ml-3/7 pt-8 lg:pt-20 px-0 md:pr-16 md:pl-10">
   <header class="text-center">
     <a
       href="#"
@@ -25,7 +32,7 @@
         Katka
       </span>
     </a>
-    <h1 class="text-5xl italic font-black mb-2">Ranní jóga - open class</h1>
+    <h1 class="text-xl md:text-5xl italic font-black mb-2">Ranní jóga - open class</h1>
     <h3 class="font-sans uppercase tracking-2x-widest text-xs leading-loose">
       otevřená lekce pro všechny úrovně
     </h3>
@@ -38,9 +45,9 @@
     <p class="font-sans uppercase tracking-2x-widest text-xs leading-loose">
       pátek 7:15—8:30 h
     </p>
-    <p class="italic tracking-wide">Pure Yoga studio, Pekařská 26, Brno</p>
+    <p class="italic tracking-wide">Yoga studio, Vinohradská 34, Praha 2</p>
   </div>
-  <div class="p-16 sm:flex">
+  <div class="p-4 sm:p-8 md:p-16 sm:flex">
     <h2 class="flex-shrink-0 mr-12">
       <span
         class="border-b-2 border-black pb-3 font-black font-sans uppercase italic tracking-2x-widest text-xs"
@@ -49,7 +56,7 @@
       </span>
     </h2>
     <div
-      class="mt-4 sm:mt-0 font-sans text-lg tracking-wide font-light leading-relaxed"
+      class="mt-20 sm:mt-0 font-sans text-lg tracking-wide font-light leading-relaxed"
     >
       <p>
         What exactly Hatha yoga actually is hasn’t changed for thousands of
@@ -72,14 +79,14 @@
       </p>
     </div>
   </div>
-  <footer class="border-t mt-12 px-16 py-12 italic flex justify-between">
-    <span class="text-xl tracking-tight">Kontakt</span>
-    <span class="text-lg font-sans font-black tracking-tight"
+  <footer class="border-t mt-12 p-4 sm:p-8 md:px-16 md:py-12 italic flex justify-between flex-wrap">
+    <span class="text-regular md:text-xl tracking-tight">Kontakt</span>
+    <span class="text-sm md:text-lg font-sans font-black tracking-tight px-8"
       >+420 608 123 456</span
     >
     <a
       href="mailto:josef@rousek.name"
-      class="underline text-blue-700 hover:no-underline text-lg font-sans font-black tracking-wider"
+      class="underline text-blue-700 hover:no-underline text-xs md:text-lg font-sans font-black tracking-wider leading-loose"
       >josef@rousek.name</a
     >
   </footer>
