@@ -14,6 +14,9 @@ module.exports = {
       letterSpacing: {
         '2x-widest': '.4em',
       },
+      zIndex: {
+      '-10': '-10',
+      }
     }
   },
   variants: {

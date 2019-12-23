@@ -2,8 +2,9 @@
 {% block content %}
 <aside
   class="hidden lg:block fixed h-screen bg-cover w-3/7"
-  style="background-image: url('/static/images/annie-spratt-PXURzW9Vcks-unsplash.jpg')"
+  style="background: #948c81;"
 >
+
   <h1
     class="text-3xl font-semibold font-sans uppercase italic tracking-2x-widest p-8 text-white"
   >
@@ -11,6 +12,21 @@
       Yoga studio
     </a>
   </h1>
+  <picture>
+      <source srcset="https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&w=1600&q=80,
+                      https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&w=1600&q=80&dpr=2 2x"
+        media="(min-width: 2400)">
+
+      <source srcset="https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&fit=crop&w=900&q=80,
+                      https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&fit=crop&w=900&q=80&dpr=2 2x"
+        media="(min-width: 1680px)">
+
+      <source srcset="https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&fit=crop&w=600&q=80,
+                      https://images.unsplash.com/photo-1540205453279-389ebbc43b5b?auto=format&fit=crop&w=600&q=80&dpr=2 2x"
+        media="(min-width: 1024px)">
+
+      <img class="absolute top-0 -z-10 object-cover w-full h-full" src="" />
+    </picture>
 </aside>
 <header class="lg:hidden">
     <h1 class="text-xl font-semibold font-sans uppercase italic tracking-2x-widest p-4 border-b">
